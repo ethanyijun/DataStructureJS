@@ -36,19 +36,10 @@ class Tree {
 		const queue = [this];
 		while (queue.length) {
 			const root = queue.shift()
-			callback(root)
+			callback(root.value)
 			root.left && queue.push(root.left)
 			root.right && queue.push(root.right)
 		}
-
-
-		// const queue = [this];
-		// while (queue.length) {
-		// 	const root = queue.shift();
-		// 	callback(root.value);
-		// 	root.left && queue.push(root.left);
-		// 	root.right && queue.push(root.right);
-		// }
 	}
 
     getMinValue() {
