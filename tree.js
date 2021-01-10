@@ -1,4 +1,3 @@
-<div id="mocha"></div>
 class Tree {
     constructor(value){
         this.value = value;
